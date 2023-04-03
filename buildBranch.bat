@@ -56,7 +56,7 @@ exit
 set /P build_name=Enter a build name (To see a list of options, enter 'list'):
 @REM pause
 if "%build_name%" == "list" goto print_dir
-goto :gen_build
+goto :fixup_build_name
 
 :fixup_build_name
 if "%build_name%" == "win32" set build_name=win32_renderdragon_x64
